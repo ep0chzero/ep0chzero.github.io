@@ -313,9 +313,9 @@ main {
 
 
 /* ==========================================================================
-   PROJECTS
+   PROJECTS & EXPERIENCE
    ========================================================================== */
-.work { padding: var(--space-2xl) 0; }
+.work, .experience { padding: var(--space-2xl) 0; }
 
 .project {
     display: grid;
@@ -558,8 +558,8 @@ main {
     }
     .hero-label { flex-direction: column; gap: var(--space-xs); }
 
-    /* Projects */
-    .work { padding: var(--space-xl) 0; }
+    /* Projects & Experience */
+    .work, .experience { padding: var(--space-xl) 0; }
     .project {
         grid-template-columns: 1fr;
         gap: var(--space-md);

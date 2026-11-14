@@ -20,6 +20,7 @@
             <a href="#" class="nav-logo">Puneeth Raj</a>
             <div class="nav-links" id="nav-links">
                 <a href="#work">Work</a>
+                <a href="#experience">Experience</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
                 <a href="https://ep0chzero.github.io/resumelatex/Puneeth_Raj_Resume.pdf" target="_blank" rel="noopener" class="nav-resume">Resume</a>
@@ -36,16 +37,18 @@
         <section class="hero">
             <div class="hero-label">
                 <span class="mono">B.Tech in AI & Data Science</span>
-                <span class="mono">India</span>
+                <span class="mono">Hyderabad, Telangana</span>
             </div>
             <h1 class="hero-title">Cloud Infrastructure,<br>Automation &amp; ML Systems</h1>
-            <p class="hero-sub">Systems engineer focused on cloud infrastructure, automation, and MLOps. I build deployment pipelines, containerize services, and self-host infrastructure on Linux.</p>
+            <p class="hero-sub">Systems &amp; Operations Engineer focused on cloud infrastructure, backend automation, and MLOps. I build deployment pipelines, containerize microservices, and maintain resilient Linux and cloud systems.</p>
             <div class="hero-links">
                 <a href="mailto:puneethx1@gmail.com">puneethx1@gmail.com</a>
                 <span class="sep" aria-hidden="true">/</span>
                 <a href="https://github.com/ep0chzero" target="_blank" rel="noopener">GitHub</a>
                 <span class="sep" aria-hidden="true">/</span>
                 <a href="https://www.linkedin.com/in/puneethx/" target="_blank" rel="noopener">LinkedIn</a>
+                <span class="sep" aria-hidden="true">/</span>
+                <a href="https://ep0chzero.github.io/resumelatex/Puneeth_Raj_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
             </div>
         </section>
 
@@ -58,7 +61,26 @@
             <article class="project">
                 <div class="project-meta">
                     <span class="mono project-idx">01</span>
-                    <h3 class="project-name">Figma-to-React Code Generator</h3>
+                    <h3 class="project-name">Job Lifecycle Management Platform</h3>
+                    <ul class="project-stack">
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Fastify</li>
+                        <li>Prisma</li>
+                        <li>PostgreSQL</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+                <div class="project-body">
+                    <p>Containerized full-stack platform featuring React, Next.js, and Fastify REST APIs. Reduces state query latency by architecting indexed PostgreSQL schemas with Prisma ORM. Enforces multi-tenant security and zero-downtime delivery with JWT/OAuth 2.0 authentication, granular RBAC policies, Docker multi-stage builds, and automated GitHub Actions CI/CD workflows.</p>
+                    <a href="https://github.com/ep0chzero" target="_blank" rel="noopener" class="project-link">View project <span class="arrow" aria-hidden="true">&rarr;</span></a>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-meta">
+                    <span class="mono project-idx">02</span>
+                    <h3 class="project-name">Figma-to-React AI Code Generator</h3>
                     <ul class="project-stack">
                         <li>Gemini AI API</li>
                         <li>React</li>
@@ -67,48 +89,50 @@
                     </ul>
                 </div>
                 <div class="project-body">
-                    <p>Extracts Figma design file metadata via the Figma API, processes node trees and image fills, then generates production-ready React component code using Google's Gemini model. Handles nested component hierarchies, style extraction, and responsive layout inference.</p>
-                    <a href="https://github.com/ep0chzero/figma-metadata-viewer" target="_blank" rel="noopener" class="project-link">View source <span class="arrow" aria-hidden="true">&rarr;</span></a>
-                </div>
-            </article>
-
-            <article class="project">
-                <div class="project-meta">
-                    <span class="mono project-idx">02</span>
-                    <h3 class="project-name">Disease Prediction &amp; Drug Recommendation</h3>
-                    <ul class="project-stack">
-                        <li>Python</li>
-                        <li>RoBERTa</li>
-                        <li>Sentiment Analysis</li>
-                        <li>Streamlit</li>
-                    </ul>
-                </div>
-                <div class="project-body">
-                    <p>Multi-model ML pipeline that predicts diseases from symptom descriptions using a fine-tuned RoBERTa transformer, then cross-references drug review datasets with sentiment analysis to recommend medications. Ensemble of gradient boosting and transformer classifiers.</p>
-                    <a href="https://github.com/ep0chzero/Disease-Prediction-and-Drug-Recommendation-Prototype" target="_blank" rel="noopener" class="project-link">View source <span class="arrow" aria-hidden="true">&rarr;</span></a>
+                    <p>Developer tool in Node.js and TypeScript that parses Figma design node trees via the Figma REST API and prompts Google Gemini AI to synthesize modular, typed React components with live preview. Handles nested hierarchies, style token extraction, and responsive layout inference.</p>
+                    <a href="https://github.com/ep0chzero/figma-metadata-viewer/tree/ai-code-gen" target="_blank" rel="noopener" class="project-link">View source <span class="arrow" aria-hidden="true">&rarr;</span></a>
                 </div>
             </article>
 
             <article class="project">
                 <div class="project-meta">
                     <span class="mono project-idx">03</span>
-                    <h3 class="project-name">Real-Time Emotion Detection</h3>
+                    <h3 class="project-name">Smart Disease Prediction &amp; Drug Recommendation</h3>
                     <ul class="project-stack">
                         <li>Python</li>
-                        <li>OpenCV</li>
-                        <li>CNNs</li>
-                        <li>Flask</li>
+                        <li>BERT</li>
+                        <li>TensorFlow</li>
+                        <li>FastAPI</li>
+                        <li>React</li>
                     </ul>
                 </div>
                 <div class="project-body">
-                    <p>Computer vision pipeline performing real-time facial analysis from live video feeds. Detects emotion, estimates age, and classifies gender using convolutional neural networks. Runs inference per-frame with OpenCV's DNN module and serves results through a Flask web interface.</p>
-                    <a href="https://github.com/ep0chzero/realtime-emogenage" target="_blank" rel="noopener" class="project-link">View source <span class="arrow" aria-hidden="true">&rarr;</span></a>
+                    <p>Multi-model ML pipeline delivering real-time clinical symptom classification and drug recommendations by fine-tuning BERT transformer models and sentiment classifiers in TensorFlow. Serves low-latency inferences via asynchronous FastAPI microservices to an interactive React web interface.</p>
+                    <a href="https://github.com/ep0chzero/Disease-Prediction-and-Drug-Recommendation-Prototype" target="_blank" rel="noopener" class="project-link">View source <span class="arrow" aria-hidden="true">&rarr;</span></a>
                 </div>
             </article>
 
             <article class="project">
                 <div class="project-meta">
                     <span class="mono project-idx">04</span>
+                    <h3 class="project-name">Real-Time Emotion Detection</h3>
+                    <ul class="project-stack">
+                        <li>Python</li>
+                        <li>OpenCV</li>
+                        <li>CNNs</li>
+                        <li>Next.js</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="project-body">
+                    <p>Computer vision pipeline performing real-time per-frame facial emotion and demographic inference. Deploys Convolutional Neural Networks (CNNs) using OpenCV DNN module, streaming live classifications to responsive Next.js and React client dashboards.</p>
+                    <a href="https://github.com/ep0chzero/realtime-emogenage" target="_blank" rel="noopener" class="project-link">View source <span class="arrow" aria-hidden="true">&rarr;</span></a>
+                </div>
+            </article>
+
+            <article class="project">
+                <div class="project-meta">
+                    <span class="mono project-idx">05</span>
                     <h3 class="project-name">IT Ticket Triage Automation</h3>
                     <ul class="project-stack">
                         <li>Python</li>
@@ -117,22 +141,51 @@
                     </ul>
                 </div>
                 <div class="project-body">
-                    <p>Automated support ticket classification and routing using LLM-driven workflows. Ingests incoming tickets, extracts intent and urgency via prompt-engineered LLM calls, then routes to appropriate queues with suggested resolution steps. Reduced manual triage time in internal support operations.</p>
+                    <p>Automated support ticket classification and routing using LLM-driven workflows. Ingests incoming tickets, extracts intent and urgency via prompt-engineered LLM calls, then routes to appropriate queues with suggested resolution steps to eliminate manual triage overhead.</p>
+                </div>
+            </article>
+        </section>
+
+        <hr class="rule" aria-hidden="true">
+
+        <!-- Experience -->
+        <section class="experience" id="experience">
+            <h2 class="section-label mono">Experience</h2>
+
+            <article class="project">
+                <div class="project-meta">
+                    <span class="mono project-idx">Jun 2026 to Present</span>
+                    <h3 class="project-name">Tech Mahindra</h3>
+                    <p class="mono" style="margin-bottom: var(--space-md); color: var(--ink);">Systems &amp; Support Operations Engineer</p>
+                    <ul class="project-stack">
+                        <li>Salesforce Cloud</li>
+                        <li>Apex / LWC</li>
+                        <li>Python</li>
+                        <li>IAM &amp; SSO</li>
+                        <li>CI/CD</li>
+                    </ul>
+                </div>
+                <div class="project-body">
+                    <p>Maintained 99%+ SLA uptime across enterprise Salesforce Cloud environments by diagnosing distributed Apex triggers, Lightning Web Components (LWC), and optimizing SOQL/SOSL queries. Reduced MTTR by 25% for enterprise incidents by troubleshooting distributed REST/SOAP API integrations, webhooks, and asynchronous queues using telemetry logs.</p>
+                    <p>Hardened enterprise authentication posture by auditing IAM controls, SAML 2.0 SSO, OAuth 2.0 token flows, TLS/SSL certificates, and resolving high-priority RBAC permission escalations. Cut release validation overhead by engineering Python and LLM automation pipelines to parse debug logs before Sandbox-to-Production CI/CD deployments.</p>
                 </div>
             </article>
 
             <article class="project">
                 <div class="project-meta">
-                    <span class="mono project-idx">05</span>
-                    <h3 class="project-name">Open-Source Contributions</h3>
+                    <span class="mono project-idx">Oct 2025 to May 2026</span>
+                    <h3 class="project-name">Genpact</h3>
+                    <p class="mono" style="margin-bottom: var(--space-md); color: var(--ink);">Systems &amp; Support Operations Engineer</p>
                     <ul class="project-stack">
-                        <li>Pull Requests</li>
-                        <li>CI/CD Pipelines</li>
-                        <li>iOS Builds</li>
+                        <li>Meta Contractor</li>
+                        <li>SQL</li>
+                        <li>Application Security</li>
+                        <li>Incident RCA</li>
                     </ul>
                 </div>
                 <div class="project-body">
-                    <p>Contributed to open-source projects across web platforms and mobile build toolchains by fixing CI/CD pipeline breakages, resolving build configuration issues, and shipping deployment automation improvements through upstream pull requests.</p>
+                    <p>Sustained high-availability SLA turnaround targets across Meta enterprise operations by diagnosing production application defects, API synchronization bottlenecks, and security access escalations.</p>
+                    <p>Mitigated platform vulnerability risks by investigating security, bot traffic anomalies, and policy compliance incidents across high-volume account endpoints. Eliminated recurring production defects by executing cross-stack Root Cause Analysis (RCA) with SQL data extractions and telemetry dashboards.</p>
                 </div>
             </article>
         </section>
@@ -144,33 +197,29 @@
             <h2 class="section-label mono">About</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>AI &amp; Data Science graduate (B.Tech) working as a systems engineer. I focus on building cloud infrastructure, automating deployments, and integrating ML pipelines. Day-to-day I work across Linux and macOS systems, writing Python and TypeScript, containerizing services with Docker, and managing CI/CD pipelines.</p>
+                    <p>AI &amp; Data Science graduate (B.Tech) working as a systems and operations engineer. I focus on building cloud infrastructure, automating deployments, and maintaining resilient Linux and cloud environments. Day-to-day I work across Linux and macOS systems, writing Python and TypeScript, containerizing services with Docker, and managing CI/CD pipelines.</p>
                     <p>I prefer building my own tooling first, self-hosting second, and managed services as a last resort. Most of my project work sits at the intersection of ML model deployment, infrastructure automation, and developer tooling.</p>
                 </div>
                 <div class="stack-table" role="list">
                     <div class="stack-row" role="listitem">
                         <span class="stack-key mono">Languages</span>
-                        <span class="stack-val">Python / TypeScript / Bash / SQL</span>
+                        <span class="stack-val">Python / TypeScript / JavaScript (ES6+) / SQL / SOQL / Bash / C</span>
                     </div>
                     <div class="stack-row" role="listitem">
                         <span class="stack-key mono">Frameworks</span>
-                        <span class="stack-val">React / FastAPI / Flask / Node.js</span>
+                        <span class="stack-val">React / Next.js / Node.js / FastAPI / Fastify / Flask / REST APIs</span>
                     </div>
                     <div class="stack-row" role="listitem">
-                        <span class="stack-key mono">ML &amp; AI</span>
-                        <span class="stack-val">PyTorch / TensorFlow / OpenCV / LLM Orchestration</span>
+                        <span class="stack-key mono">AI &amp; ML</span>
+                        <span class="stack-val">PyTorch / TensorFlow / BERT / OpenCV / CNNs / LLM Orchestration</span>
                     </div>
                     <div class="stack-row" role="listitem">
-                        <span class="stack-key mono">Infrastructure</span>
-                        <span class="stack-val">Docker / Kubernetes / Terraform / Ansible / CI/CD</span>
+                        <span class="stack-key mono">Cloud &amp; DevOps</span>
+                        <span class="stack-val">Docker / Kubernetes / Linux (systemd) / CI/CD (GitHub Actions) / Terraform / AWS / GCP</span>
                     </div>
                     <div class="stack-row" role="listitem">
-                        <span class="stack-key mono">Systems</span>
-                        <span class="stack-val">Linux / macOS / systemd / Proxmox / KVM</span>
-                    </div>
-                    <div class="stack-row" role="listitem">
-                        <span class="stack-key mono">Data</span>
-                        <span class="stack-val">PostgreSQL / MongoDB / Redis / Kafka</span>
+                        <span class="stack-key mono">Data &amp; Security</span>
+                        <span class="stack-val">PostgreSQL / Prisma ORM / MongoDB / Redis / Kafka / IAM / OAuth 2.0 / SAML SSO / TLS/SSL / RBAC</span>
                     </div>
                 </div>
             </div>
@@ -178,11 +227,15 @@
 
         <hr class="rule" aria-hidden="true">
 
-        <!-- Contact -->
+        <!-- Contact & Resume -->
         <section class="contact" id="contact">
-            <h2 class="section-label mono">Contact</h2>
-            <p class="contact-text">Looking for cloud engineering, systems administration, or MLOps roles at product companies. If your team needs someone who ships infrastructure code and cares about operational reliability, reach out.</p>
-            <a href="mailto:puneethx1@gmail.com" class="contact-email">puneethx1@gmail.com <span class="arrow" aria-hidden="true">&rarr;</span></a>
+            <h2 class="section-label mono">Contact &amp; Resume</h2>
+            <p class="contact-text">Looking for systems engineering, cloud infrastructure, or MLOps roles at product companies. If your team needs someone who ships infrastructure code and cares about operational reliability, reach out.</p>
+            <div style="display: flex; gap: var(--space-md); flex-wrap: wrap; margin-bottom: var(--space-lg);">
+                <a href="mailto:puneethx1@gmail.com" class="contact-email">puneethx1@gmail.com <span class="arrow" aria-hidden="true">&rarr;</span></a>
+                <a href="https://ep0chzero.github.io/resumelatex/Puneeth_Raj_Resume.pdf" target="_blank" rel="noopener" class="contact-email">View Live Resume (PDF) <span class="arrow" aria-hidden="true">&rarr;</span></a>
+                <a href="https://github.com/ep0chzero/resumelatex/releases/latest/download/Puneeth_Raj_Resume.pdf" class="contact-email">Download Resume (Latest Build) <span class="arrow" aria-hidden="true">&darr;</span></a>
+            </div>
         </section>
     </main>
 
