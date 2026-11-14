@@ -1,55 +1,43 @@
-// Add a shadow to header when scrolling
-const header = document.querySelector('.header');
+// Mobile navigation toggle
+(function () {
+    var toggle = document.getElementById('nav-toggle');
+    var links  = document.getElementById('nav-links');
+    if (!toggle || !links) return;
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
+    toggle.addEventListener('click', function () {
+        var open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!open));
+        links.classList.toggle('open', !open);
+        document.body.classList.toggle('nav-open', !open);
+    });
+
+    links.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+            toggle.setAttribute('aria-expanded', 'false');
+            links.classList.remove('open');
+            document.body.classList.remove('nav-open');
+        });
+    });
+})();
+
+// Dark / light theme toggle
+(function () {
+    var btn  = document.getElementById('theme-toggle');
+    var html = document.documentElement;
+    if (!btn) return;
+
+    function label(theme) {
+        btn.setAttribute('aria-label',
+            theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
     }
-});
 
-// Animate elements on scroll using Intersection Observer
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: "0px 0px -50px 0px"
-};
+    // Set initial label (theme already applied by inline <head> script)
+    label(html.getAttribute('data-theme'));
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-            observer.unobserve(entry.target);
-        }
+    btn.addEventListener('click', function () {
+        var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        label(next);
     });
-}, observerOptions);
-
-// Initialize elements with zero opacity and slide them up
-document.querySelectorAll('section').forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-    observer.observe(section);
-});
-
-// Hamburger Menu Logic
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
-const navItems = document.querySelectorAll('.nav-links li a');
-
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navLinks.classList.toggle('active');
-    });
-}
-
-navItems.forEach(item => {
-    item.addEventListener('click', () => {
-        if (hamburger && hamburger.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navLinks.classList.remove('active');
-        }
-    });
-});
+})();
